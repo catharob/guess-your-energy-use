@@ -1,4 +1,4 @@
-function chart() {
+$(function() {
     // Create the chart
     $('#container').highcharts({
 
@@ -15,4 +15,4 @@ function chart() {
         }
 
     });
-}
+});
