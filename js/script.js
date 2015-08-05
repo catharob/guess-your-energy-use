@@ -1,3 +1,5 @@
+
+
 function sendToSheet(){
 	var heat = $('#heating').val();
 	var cool = $('#cooling').val();
@@ -21,4 +23,11 @@ function sendToSheet(){
 				}
 			}
 		});
-}
+};
+
+function showHeat(){
+	var heatInput = document.getElementById("heating").value
+	$('#heatPerc').animate({width: heatInput + "px"});
+
+};
+
