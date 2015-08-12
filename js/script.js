@@ -1,3 +1,5 @@
+
+
 function sendToSheet(){
 	var zip = $('#zipcode').val();
 	var heat = $('#heating').val();
@@ -23,4 +25,24 @@ function sendToSheet(){
 				}
 			}
 		});
+};
+
+function showHeat(){
+	var heatInput = document.getElementById("heating").value
+	$('.heatPerc').animate({width: heatInput + "%"});
+};
+
+function showCool(){
+	var coolInput = document.getElementById("cooling").value
+	$('.coolPerc').animate({width: coolInput + '%'});
 }
+
+function showOther(){
+	var othInput = document.getElementById("other").value
+	$('.othPerc').animate({width: othInput + '%'});
+}
+
+function validateForm(){
+
+}
+
