@@ -8,4 +8,4 @@ Highcharts and Google Charts are confounding me. Will now try to make simple vis
 
 #### Status
 
-Have successfully created div that responds to input. Now need to finesse a bit to make responsive, and stack different input divs next to each other. Will require float, I believe.
+JSON and responsive viz of form input working. Now need: form validation, delay of load of thank you page so that JSON populates with form response, TONS of css, data analysis for standard to compare. 

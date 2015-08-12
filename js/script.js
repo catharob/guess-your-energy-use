@@ -1,16 +1,18 @@
 
 
 function sendToSheet(){
+	var zip = $('#zipcode').val();
 	var heat = $('#heating').val();
 	var cool = $('#cooling').val();
 	var oth = $('#other').val();
 
 		$.ajax({
-			url:"https://docs.google.com/forms/d/1gJrn9HYwsRc8qivrYDeXtGwOmIsdVFAtu8tXda3Gjq4/formResponse",
+			url:"https://docs.google.com/forms/d/1wDbXZA2YjM4t6e12-TOZzX_1Yiccr77OzB50OEltBhs/formResponse",
 			data: {
-				"entry.1567015658": heat,
-				"entry.1939086220": cool,
-				"entry.1407585385": oth
+				"entry.607629145": zip,
+				"entry.906479888": heat,
+				"entry.1849920242": cool,
+				"entry.465745042": oth
 			},
 			type: "POST",
 			dataType: "xml",
@@ -27,7 +29,20 @@ function sendToSheet(){
 
 function showHeat(){
 	var heatInput = document.getElementById("heating").value
-	$('#heatPerc').animate({width: heatInput + "px"});
-
+	$('.heatPerc').animate({width: heatInput + "%"});
 };
+
+function showCool(){
+	var coolInput = document.getElementById("cooling").value
+	$('.coolPerc').animate({width: coolInput + '%'});
+}
+
+function showOther(){
+	var othInput = document.getElementById("other").value
+	$('.othPerc').animate({width: othInput + '%'});
+}
+
+function validateForm(){
+
+}
 
