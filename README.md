@@ -8,4 +8,4 @@ Highcharts and Google Charts are confounding me. Will now try to make simple vis
 
 #### Status
 
-JSON and responsive viz of form input working. Now need: form validation, delay of load of thank you page so that JSON populates with form response, TONS of css, data analysis for standard to compare. 
+JSON and responsive viz of form input working. Now need: form validation, delay of load of thank you page so that JSON populates with form response, TONS of css, data analysis for standard to compare.  
