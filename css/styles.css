@@ -33,3 +33,7 @@
 	border-color: black;
 	position: absolute;
 }
+
+.hidden{
+	visibility: hidden;
+}
